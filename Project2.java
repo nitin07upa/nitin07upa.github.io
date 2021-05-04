@@ -60,10 +60,10 @@ public class Project2  extends TestbaseSearch{
 		String x1Sheet="Sheet3";
 		int rowCount=ExcelUtility.getRowCount(x1Path,x1Sheet);
 		int cellCount=ExcelUtility.getCellCount(x1Path,x1Sheet,rowCount);
-		String[][]data=new String[rowCount][cellCount];
-		for(int i=1;i<=rowCount;i++) {
+		String[][]data=new String[1][cellCount];
+		//for(int i=1;i<=rowCount;i++) {
 			for (int j=0;j<cellCount;j++) {
-				data[i-1][j]=ExcelUtility.getCellData(x1Path,x1Sheet,i,j);
+				data[0][j]=ExcelUtility.getCellData(x1Path,x1Sheet,0,j);
 			}
 		}
 		return data;
